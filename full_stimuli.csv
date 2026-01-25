@@ -1,0 +1,321 @@
+group,type,condition,shape1,shape2,color,background,sentence,truth_value,acc_key,image,cardinality,ratio
+a,I,Every-Some,Triangle,Star,Purple,Cloud,Every triangle is connected to some star in the cloud.,0,L,F.eTRsST-Cloud.png,8,1
+a,D,D,Square,Yellow,null,Cross,There are yellow squares in the cross.,1,A,T.ywSQ-Cross.png,17,1
+a,A,All,Star,Green,Brown,Triangle,All stars are green in the triangle.,0,L,Tri.aSTgr-False.png,15,7:8
+a,I,Some-Every,Square,Circle,Brown,Cloud,Some square is connected to every circle in the cloud.,1,A,T.sSQeCR-Cloud.png,8,1
+a,P,Most,Circle,Pink,Yellow,Diamond,Most circles are pink in the diamond.,1,A,Dmd.mCRpk-True.png,17,9:8
+a,A,All,Square,Purple,Yellow,House,All squares are purple in the house.,0,L,Hse.aSQpr-False.png,15,8:7
+a,I,Every-Some,Star,Triangle,Brown,Cross,Every star is connected to some triangle in the cross.,0,L,F.eSTsTR-Cross.png,8,1
+a,D,D,Circle,Red,null,Cloud,There are red circles in the cloud.,1,A,T.rdCR-Cloud.png,15,1
+a,P,Most,Square,Brown,Red,Heart,Most squares are brown in the heart.,1,A,Hrt.mSQbr-True.png,15,8:7
+a,I,Some-Every,Triangle,Star,Red,Scroll,Some triangle is connected to every star in the scroll.,0,L,F.sTReST-Scroll.png,8,1
+a,P,Most,Star,Pink,Green,Cross,Most stars are pink in the cross.,0,L,Crs.mSTpk-False.png,15,7:8
+a,I,Every-Some,Square,Circle,Yellow,Star,Every square is connected to some circle in the star.,1,A,T.eSQsCR-Star.png,8,1
+a,A,All,Triangle,Red,Orange,Diamond,All triangles are red in the diamond.,0,L,Dmd.aTRrd-False.png,17,9:8
+a,D,D,Square,null,Green,Scroll,There are blue squares in the scroll.,0,L,F.blSQ-Scroll.png,17,1
+a,I,Some-Every,Circle,Square,Purple,Triangle,Some circle is connected to every square in the triangle.,1,A,T.sCReSQ-Triangle.png,8,1
+a,A,All,Circle,Brown,Blue,Cross,All circles are brown in the cross.,0,L,Crs.aCRbr-False.png,17,8:9
+a,I,Some-Every,Star,Triangle,Green,Heart,Some star is connected to every triangle in the heart.,1,A,T.sSTeTR-Heart.png,8,1
+a,P,Most,Triangle,Blue,Pink,Cloud,Most triangles are blue in the cloud.,0,L,Cld.mTRbl-False.png,17,9:8
+a,I,Every-Some,Circle,Square,Orange,Heart,Every circle is connected to some square in the heart.,0,L,F.eCRsSQ-Heart.png,8,1
+a,D,D,Triangle,Brown,null,Star,There are brown triangles in the star.,1,A,T.brTR-Star.png,17,1
+a,P,Most,Star,Red,Purple,Scroll,Most stars are red in the scroll.,1,A,Scr.mSTrd-True.png,15,8:7
+a,I,Some-Every,Triangle,Star,Orange,Cross,Some triangle is connected to every star in the cross.,1,A,T.sTReST-Cross.png,8,1
+a,D,D,Circle,null,Blue,House,There are orange circles in the house.,0,L,F.ogCR-House.png,15,1
+a,I,Every-Some,Square,Circle,Green,Triangle,Every square is connected to some circle in the triangle.,0,L,F.eSQsCR-Triangle.png,8,1
+a,A,All,Star,Pink,null,Heart,All stars are pink in the heart.,1,A,Hrt.aSTpk-True.png,15,1
+a,I,Some-Every,Circle,Square,Blue,Star,Some circle is connected to every square in the star.,0,L,F.sCReSQ-Star.png,8,1
+a,A,All,Square,Yellow,null,Cloud,All squares are yellow in the cloud.,1,A,Cld.aSQyw-True.png,15,1
+a,I,Every-Some,Triangle,Star,Blue,Diamond,Every triangle is connected to some star in the diamond.,1,A,T.eTRsST-Diamond.png,8,1
+a,D,D,Star,Pink,null,Triangle,There are pink stars in the triangle.,1,A,T.pkST-Triangle.png,15,1
+a,P,Most,Circle,Yellow,Brown,Star,Most circles are yellow in the star.,0,L,Str.mCRyw-False.png,17,8:9
+a,I,Some-Every,Square,Circle,Pink,Diamond,Some square is connected to every circle in the diamond.,0,L,F.sSQeCR-Diamond.png,8,1
+a,P,Most,Triangle,Green,Orange,House,Most triangles are green in the house.,1,A,Hse.mTRgr-True.png,17,8:9
+a,I,Every-Some,Star,Triangle,Pink,Scroll,Every star is connected to some triangle in the scroll.,1,A,T.eSTsTR-Scroll.png,8,1
+a,D,D,Star,null,Purple,Diamond,There are green stars in the diamond.,0,L,F.grST-Diamond.png,15,1
+a,A,All,Circle,Orange,null,Scroll,All circles are orange in the scroll.,1,A,Scr.aCRog-True.png,17,1
+a,P,Most,Square,Orange,Blue,Triangle,Most squares are orange in the triangle.,0,L,Tri.mSQog-False.png,15,7:8
+a,I,Every-Some,Circle,Square,Red,House,Every circle is connected to some square in the house.,1,A,T.eCRsSQ-House.png,8,1
+a,A,All,Triangle,Blue,null,Star,All triangles are blue in the star.,1,A,Str.aTRbl-True.png,17,1
+a,I,Some-Every,Star,Triangle,Yellow,House,Some star is connected to every triangle in the house.,0,L,F.sSTeTR-House.png,8,1
+a,D,D,Triangle,null,Orange,Heart,There are purple triangles in the heart.,0,L,F.prTR-Heart.png,17,1
+aa,I,Every-Some,Triangle,Star,Purple,Cloud,Every triangle is connected to some star in the cloud.,0,A,F.eTRsST-Cloud.png,8,1
+aa,D,D,Square,Yellow,null,Cross,There are yellow squares in the cross.,1,L,T.ywSQ-Cross.png,17,1
+aa,A,All,Star,Green,Brown,Triangle,All stars are green in the triangle.,0,A,Tri.aSTgr-False.png,15,7:8
+aa,I,Some-Every,Square,Circle,Brown,Cloud,Some square is connected to every circle in the cloud.,1,L,T.sSQeCR-Cloud.png,8,1
+aa,P,Most,Circle,Pink,Yellow,Diamond,Most circles are pink in the diamond.,1,L,Dmd.mCRpk-True.png,17,9:8
+aa,A,All,Square,Purple,Yellow,House,All squares are purple in the house.,0,A,Hse.aSQpr-False.png,15,8:7
+aa,I,Every-Some,Star,Triangle,Brown,Cross,Every star is connected to some triangle in the cross.,0,A,F.eSTsTR-Cross.png,8,1
+aa,D,D,Circle,Red,null,Cloud,There are red circles in the cloud.,1,L,T.rdCR-Cloud.png,15,1
+aa,P,Most,Square,Brown,Red,Heart,Most squares are brown in the heart.,1,L,Hrt.mSQbr-True.png,15,8:7
+aa,I,Some-Every,Triangle,Star,Red,Scroll,Some triangle is connected to every star in the scroll.,0,A,F.sTReST-Scroll.png,8,1
+aa,P,Most,Star,Pink,Green,Cross,Most stars are pink in the cross.,0,A,Crs.mSTpk-False.png,15,7:8
+aa,I,Every-Some,Square,Circle,Yellow,Star,Every square is connected to some circle in the star.,1,L,T.eSQsCR-Star.png,8,1
+aa,A,All,Triangle,Red,Orange,Diamond,All triangles are red in the diamond.,0,A,Dmd.aTRrd-False.png,17,9:8
+aa,D,D,Square,null,Green,Scroll,There are blue squares in the scroll.,0,A,F.blSQ-Scroll.png,17,1
+aa,I,Some-Every,Circle,Square,Purple,Triangle,Some circle is connected to every square in the triangle.,1,L,T.sCReSQ-Triangle.png,8,1
+aa,A,All,Circle,Brown,Blue,Cross,All circles are brown in the cross.,0,A,Crs.aCRbr-False.png,17,8:9
+aa,I,Some-Every,Star,Triangle,Green,Heart,Some star is connected to every triangle in the heart.,1,L,T.sSTeTR-Heart.png,8,1
+aa,P,Most,Triangle,Blue,Pink,Cloud,Most triangles are blue in the cloud.,0,A,Cld.mTRbl-False.png,17,9:8
+aa,I,Every-Some,Circle,Square,Orange,Heart,Every circle is connected to some square in the heart.,0,A,F.eCRsSQ-Heart.png,8,1
+aa,D,D,Triangle,Brown,null,Star,There are brown triangles in the star.,1,L,T.brTR-Star.png,17,1
+aa,P,Most,Star,Red,Purple,Scroll,Most stars are red in the scroll.,1,L,Scr.mSTrd-True.png,15,8:7
+aa,I,Some-Every,Triangle,Star,Orange,Cross,Some triangle is connected to every star in the cross.,1,L,T.sTReST-Cross.png,8,1
+aa,D,D,Circle,null,Blue,House,There are orange circles in the house.,0,A,F.ogCR-House.png,15,1
+aa,I,Every-Some,Square,Circle,Green,Triangle,Every square is connected to some circle in the triangle.,0,A,F.eSQsCR-Triangle.png,8,1
+aa,A,All,Star,Pink,null,Heart,All stars are pink in the heart.,1,L,Hrt.aSTpk-True.png,15,1
+aa,I,Some-Every,Circle,Square,Blue,Star,Some circle is connected to every square in the star.,0,A,F.sCReSQ-Star.png,8,1
+aa,A,All,Square,Yellow,null,Cloud,All squares are yellow in the cloud.,1,L,Cld.aSQyw-True.png,15,1
+aa,I,Every-Some,Triangle,Star,Blue,Diamond,Every triangle is connected to some star in the diamond.,1,L,T.eTRsST-Diamond.png,8,1
+aa,D,D,Star,Pink,null,Triangle,There are pink stars in the triangle.,1,L,T.pkST-Triangle.png,15,1
+aa,P,Most,Circle,Yellow,Brown,Star,Most circles are yellow in the star.,0,A,Str.mCRyw-False.png,17,8:9
+aa,I,Some-Every,Square,Circle,Pink,Diamond,Some square is connected to every circle in the diamond.,0,A,F.sSQeCR-Diamond.png,8,1
+aa,P,Most,Triangle,Green,Orange,House,Most triangles are green in the house.,1,L,Hse.mTRgr-True.png,17,8:9
+aa,I,Every-Some,Star,Triangle,Pink,Scroll,Every star is connected to some triangle in the scroll.,1,L,T.eSTsTR-Scroll.png,8,1
+aa,D,D,Star,null,Purple,Diamond,There are green stars in the diamond.,0,A,F.grST-Diamond.png,15,1
+aa,A,All,Circle,Orange,null,Scroll,All circles are orange in the scroll.,1,L,Scr.aCRog-True.png,17,1
+aa,P,Most,Square,Orange,Blue,Triangle,Most squares are orange in the triangle.,0,A,Tri.mSQog-False.png,15,7:8
+aa,I,Every-Some,Circle,Square,Red,House,Every circle is connected to some square in the house.,1,L,T.eCRsSQ-House.png,8,1
+aa,A,All,Triangle,Blue,null,Star,All triangles are blue in the star.,1,L,Str.aTRbl-True.png,17,1
+aa,I,Some-Every,Star,Triangle,Yellow,House,Some star is connected to every triangle in the house.,0,A,F.sSTeTR-House.png,8,1
+aa,D,D,Triangle,null,Orange,Heart,There are purple triangles in the heart.,0,A,F.prTR-Heart.png,17,1
+b,I,Every-Some,Triangle,Star,Purple,Cloud,Every triangle is connected to some star in the cloud.,0,A,F.eTRsST-Cloud.png,8,1
+b,D,D,Square,Yellow,null,Cross,There are yellow squares in the cross.,1,L,T.ywSQ-Cross.png,17,1
+b,A,All,Star,Green,Brown,Triangle,All stars are green in the triangle.,0,A,Tri.aSTgr-False.png,15,7:8
+b,I,Some-Every,Square,Circle,Brown,Cloud,Some square is connected to every circle in the cloud.,1,L,T.sSQeCR-Cloud.png,8,1
+b,P,Most,Circle,Pink,Yellow,Diamond,Most circles are pink in the diamond.,1,L,Dmd.mCRpk-True.png,17,9:8
+b,A,All,Square,Purple,Yellow,House,All squares are purple in the house.,0,A,Hse.aSQpr-False.png,15,8:7
+b,I,Every-Some,Star,Triangle,Brown,Cross,Every star is connected to some triangle in the cross.,0,A,F.eSTsTR-Cross.png,8,1
+b,D,D,Circle,Red,null,Cloud,There are red circles in the cloud.,1,L,T.rdCR-Cloud.png,15,1
+b,P,Most,Square,Brown,Red,Heart,Most squares are brown in the heart.,1,L,Hrt.mSQbr-True.png,15,8:7
+b,I,Some-Every,Triangle,Star,Red,Scroll,Some triangle is connected to every star in the scroll.,0,A,F.sTReST-Scroll.png,8,1
+b,P,Most,Star,Pink,Green,Cross,Most stars are pink in the cross.,0,A,Crs.mSTpk-False.png,15,7:8
+b,I,Every-Some,Square,Circle,Yellow,Star,Every square is connected to some circle in the star.,1,L,T.eSQsCR-Star.png,8,1
+b,A,All,Triangle,Red,Orange,Diamond,All triangles are red in the diamond.,0,A,Dmd.aTRrd-False.png,17,9:8
+b,D,D,Square,null,Green,Scroll,There are blue squares in the scroll.,0,A,F.blSQ-Scroll.png,17,1
+b,I,Some-Every,Circle,Square,Purple,Triangle,Some circle is connected to every square in the triangle.,1,L,T.sCReSQ-Triangle.png,8,1
+b,A,All,Circle,Brown,Blue,Cross,All circles are brown in the cross.,0,A,Crs.aCRbr-False.png,17,8:9
+b,I,Some-Every,Star,Triangle,Green,Heart,Some star is connected to every triangle in the heart.,1,L,T.sSTeTR-Heart.png,8,1
+b,P,Most,Triangle,Blue,Pink,Cloud,Most triangles are blue in the cloud.,0,A,Cld.mTRbl-False.png,17,9:8
+b,I,Every-Some,Circle,Square,Orange,Heart,Every circle is connected to some square in the heart.,0,A,F.eCRsSQ-Heart.png,8,1
+b,D,D,Triangle,Brown,null,Star,There are brown triangles in the star.,1,L,T.brTR-Star.png,17,1
+b,P,Most,Star,Red,Purple,Scroll,Most stars are red in the scroll.,1,L,Scr.mSTrd-True.png,15,8:7
+b,I,Some-Every,Triangle,Star,Orange,Cross,Some triangle is connected to every star in the cross.,1,L,T.sTReST-Cross.png,8,1
+b,D,D,Circle,null,Blue,House,There are orange circles in the house.,0,A,F.ogCR-House.png,15,1
+b,I,Every-Some,Square,Circle,Green,Triangle,Every square is connected to some circle in the triangle.,0,A,F.eSQsCR-Triangle.png,8,1
+b,A,All,Star,Pink,null,Heart,All stars are pink in the heart.,1,L,Hrt.aSTpk-True.png,15,1
+b,I,Some-Every,Circle,Square,Blue,Star,Some circle is connected to every square in the star.,0,A,F.sCReSQ-Star.png,8,1
+b,A,All,Square,Yellow,null,Cloud,All squares are yellow in the cloud.,1,L,Cld.aSQyw-True.png,15,1
+b,I,Every-Some,Triangle,Star,Blue,Diamond,Every triangle is connected to some star in the diamond.,1,L,T.eTRsST-Diamond.png,8,1
+b,D,D,Star,Pink,null,Triangle,There are pink stars in the triangle.,1,L,T.pkST-Triangle.png,15,1
+b,P,Most,Circle,Yellow,Brown,Star,Most circles are yellow in the star.,0,A,Str.mCRyw-False.png,17,8:9
+b,I,Some-Every,Square,Circle,Pink,Diamond,Some square is connected to every circle in the diamond.,0,A,F.sSQeCR-Diamond.png,8,1
+b,P,Most,Triangle,Green,Orange,House,Most triangles are green in the house.,1,L,Hse.mTRgr-True.png,17,8:9
+b,I,Every-Some,Star,Triangle,Pink,Scroll,Every star is connected to some triangle in the scroll.,1,L,T.eSTsTR-Scroll.png,8,1
+b,D,D,Star,null,Purple,Diamond,There are green stars in the diamond.,0,A,F.grST-Diamond.png,15,1
+b,A,All,Circle,Orange,null,Scroll,All circles are orange in the scroll.,1,L,Scr.aCRog-True.png,17,1
+b,P,Most,Square,Orange,Blue,Triangle,Most squares are orange in the triangle.,0,A,Tri.mSQog-False.png,15,7:8
+b,I,Every-Some,Circle,Square,Red,House,Every circle is connected to some square in the house.,1,L,T.eCRsSQ-House.png,8,1
+b,A,All,Triangle,Blue,null,Star,All triangles are blue in the star.,1,L,Str.aTRbl-True.png,17,1
+b,I,Some-Every,Star,Triangle,Yellow,House,Some star is connected to every triangle in the house.,0,A,F.sSTeTR-House.png,8,1
+b,D,D,Triangle,null,Orange,Heart,There are purple triangles in the heart.,0,A,F.prTR-Heart.png,17,1
+bb,I,Every-Some,Triangle,Star,Purple,Cloud,Every triangle is connected to some star in the cloud.,0,L,F.eTRsST-Cloud.png,8,1
+bb,D,D,Square,Yellow,null,Cross,There are yellow squares in the cross.,1,A,T.ywSQ-Cross.png,17,1
+bb,A,All,Star,Green,Brown,Triangle,All stars are green in the triangle.,0,L,Tri.aSTgr-False.png,15,7:8
+bb,I,Some-Every,Square,Circle,Brown,Cloud,Some square is connected to every circle in the cloud.,1,A,T.sSQeCR-Cloud.png,8,1
+bb,P,Most,Circle,Pink,Yellow,Diamond,Most circles are pink in the diamond.,1,A,Dmd.mCRpk-True.png,17,9:8
+bb,A,All,Square,Purple,Yellow,House,All squares are purple in the house.,0,L,Hse.aSQpr-False.png,15,8:7
+bb,I,Every-Some,Star,Triangle,Brown,Cross,Every star is connected to some triangle in the cross.,0,L,F.eSTsTR-Cross.png,8,1
+bb,D,D,Circle,Red,null,Cloud,There are red circles in the cloud.,1,A,T.rdCR-Cloud.png,15,1
+bb,P,Most,Square,Brown,Red,Heart,Most squares are brown in the heart.,1,A,Hrt.mSQbr-True.png,15,8:7
+bb,I,Some-Every,Triangle,Star,Red,Scroll,Some triangle is connected to every star in the scroll.,0,L,F.sTReST-Scroll.png,8,1
+bb,P,Most,Star,Pink,Green,Cross,Most stars are pink in the cross.,0,L,Crs.mSTpk-False.png,15,7:8
+bb,I,Every-Some,Square,Circle,Yellow,Star,Every square is connected to some circle in the star.,1,A,T.eSQsCR-Star.png,8,1
+bb,A,All,Triangle,Red,Orange,Diamond,All triangles are red in the diamond.,0,L,Dmd.aTRrd-False.png,17,9:8
+bb,D,D,Square,null,Green,Scroll,There are blue squares in the scroll.,0,L,F.blSQ-Scroll.png,17,1
+bb,I,Some-Every,Circle,Square,Purple,Triangle,Some circle is connected to every square in the triangle.,1,A,T.sCReSQ-Triangle.png,8,1
+bb,A,All,Circle,Brown,Blue,Cross,All circles are brown in the cross.,0,L,Crs.aCRbr-False.png,17,8:9
+bb,I,Some-Every,Star,Triangle,Green,Heart,Some star is connected to every triangle in the heart.,1,A,T.sSTeTR-Heart.png,8,1
+bb,P,Most,Triangle,Blue,Pink,Cloud,Most triangles are blue in the cloud.,0,L,Cld.mTRbl-False.png,17,9:8
+bb,I,Every-Some,Circle,Square,Orange,Heart,Every circle is connected to some square in the heart.,0,L,F.eCRsSQ-Heart.png,8,1
+bb,D,D,Triangle,Brown,null,Star,There are brown triangles in the star.,1,A,T.brTR-Star.png,17,1
+bb,P,Most,Star,Red,Purple,Scroll,Most stars are red in the scroll.,1,A,Scr.mSTrd-True.png,15,8:7
+bb,I,Some-Every,Triangle,Star,Orange,Cross,Some triangle is connected to every star in the cross.,1,A,T.sTReST-Cross.png,8,1
+bb,D,D,Circle,null,Blue,House,There are orange circles in the house.,0,L,F.ogCR-House.png,15,1
+bb,I,Every-Some,Square,Circle,Green,Triangle,Every square is connected to some circle in the triangle.,0,L,F.eSQsCR-Triangle.png,8,1
+bb,A,All,Star,Pink,null,Heart,All stars are pink in the heart.,1,A,Hrt.aSTpk-True.png,15,1
+bb,I,Some-Every,Circle,Square,Blue,Star,Some circle is connected to every square in the star.,0,L,F.sCReSQ-Star.png,8,1
+bb,A,All,Square,Yellow,null,Cloud,All squares are yellow in the cloud.,1,A,Cld.aSQyw-True.png,15,1
+bb,I,Every-Some,Triangle,Star,Blue,Diamond,Every triangle is connected to some star in the diamond.,1,A,T.eTRsST-Diamond.png,8,1
+bb,D,D,Star,Pink,null,Triangle,There are pink stars in the triangle.,1,A,T.pkST-Triangle.png,15,1
+bb,P,Most,Circle,Yellow,Brown,Star,Most circles are yellow in the star.,0,L,Str.mCRyw-False.png,17,8:9
+bb,I,Some-Every,Square,Circle,Pink,Diamond,Some square is connected to every circle in the diamond.,0,L,F.sSQeCR-Diamond.png,8,1
+bb,P,Most,Triangle,Green,Orange,House,Most triangles are green in the house.,1,A,Hse.mTRgr-True.png,17,8:9
+bb,I,Every-Some,Star,Triangle,Pink,Scroll,Every star is connected to some triangle in the scroll.,1,A,T.eSTsTR-Scroll.png,8,1
+bb,D,D,Star,null,Purple,Diamond,There are green stars in the diamond.,0,L,F.grST-Diamond.png,15,1
+bb,A,All,Circle,Orange,null,Scroll,All circles are orange in the scroll.,1,A,Scr.aCRog-True.png,17,1
+bb,P,Most,Square,Orange,Blue,Triangle,Most squares are orange in the triangle.,0,L,Tri.mSQog-False.png,15,7:8
+bb,I,Every-Some,Circle,Square,Red,House,Every circle is connected to some square in the house.,1,A,T.eCRsSQ-House.png,8,1
+bb,A,All,Triangle,Blue,null,Star,All triangles are blue in the star.,1,A,Str.aTRbl-True.png,17,1
+bb,I,Some-Every,Star,Triangle,Yellow,House,Some star is connected to every triangle in the house.,0,L,F.sSTeTR-House.png,8,1
+bb,D,D,Triangle,null,Orange,Heart,There are purple triangles in the heart.,0,L,F.prTR-Heart.png,17,1
+c,P,Most,Star,Red,Purple,Scroll,Most stars are red in the scroll.,1,L,Scr.mSTrd-True.png,15,8:7
+c,I,Some-Every,Triangle,Star,Orange,Cross,Some triangle is connected to every star in the cross.,1,L,T.sTReST-Cross.png,8,1
+c,D,D,Circle,null,Blue,House,There are orange circles in the house.,0,A,F.ogCR-House.png,15,1
+c,I,Every-Some,Square,Circle,Green,Triangle,Every square is connected to some circle in the triangle.,0,A,F.eSQsCR-Triangle.png,8,1
+c,A,All,Star,Pink,null,Heart,All stars are pink in the heart.,1,L,Hrt.aSTpk-True.png,15,1
+c,I,Some-Every,Circle,Square,Blue,Star,Some circle is connected to every square in the star.,0,A,F.sCReSQ-Star.png,8,1
+c,A,All,Square,Yellow,null,Cloud,All squares are yellow in the cloud.,1,L,Cld.aSQyw-True.png,15,1
+c,I,Every-Some,Triangle,Star,Blue,Diamond,Every triangle is connected to some star in the diamond.,1,L,T.eTRsST-Diamond.png,8,1
+c,D,D,Star,Pink,null,Triangle,There are pink stars in the triangle.,1,L,T.pkST-Triangle.png,15,1
+c,P,Most,Circle,Yellow,Brown,Star,Most circles are yellow in the star.,0,A,Str.mCRyw-False.png,17,8:9
+c,I,Some-Every,Square,Circle,Pink,Diamond,Some square is connected to every circle in the diamond.,0,A,F.sSQeCR-Diamond.png,8,1
+c,P,Most,Triangle,Green,Orange,House,Most triangles are green in the house.,1,L,Hse.mTRgr-True.png,17,8:9
+c,I,Every-Some,Star,Triangle,Pink,Scroll,Every star is connected to some triangle in the scroll.,1,L,T.eSTsTR-Scroll.png,8,1
+c,D,D,Star,null,Purple,Diamond,There are green stars in the diamond.,0,A,F.grST-Diamond.png,15,1
+c,A,All,Circle,Orange,null,Scroll,All circles are orange in the scroll.,1,L,Scr.aCRog-True.png,17,1
+c,P,Most,Square,Orange,Blue,Triangle,Most squares are orange in the triangle.,0,A,Tri.mSQog-False.png,15,7:8
+c,I,Every-Some,Circle,Square,Red,House,Every circle is connected to some square in the house.,1,L,T.eCRsSQ-House.png,8,1
+c,A,All,Triangle,Blue,null,Star,All triangles are blue in the star.,1,L,Str.aTRbl-True.png,17,1
+c,I,Some-Every,Star,Triangle,Yellow,House,Some star is connected to every triangle in the house.,0,A,F.sSTeTR-House.png,8,1
+c,D,D,Triangle,null,Orange,Heart,There are purple triangles in the heart.,0,A,F.prTR-Heart.png,17,1
+c,I,Every-Some,Triangle,Star,Purple,Cloud,Every triangle is connected to some star in the cloud.,0,A,F.eTRsST-Cloud.png,8,1
+c,D,D,Square,Yellow,null,Cross,There are yellow squares in the cross.,1,L,T.ywSQ-Cross.png,17,1
+c,A,All,Star,Green,Brown,Triangle,All stars are green in the triangle.,0,A,Tri.aSTgr-False.png,15,7:8
+c,I,Some-Every,Square,Circle,Brown,Cloud,Some square is connected to every circle in the cloud.,1,L,T.sSQeCR-Cloud.png,8,1
+c,P,Most,Circle,Pink,Yellow,Diamond,Most circles are pink in the diamond.,1,L,Dmd.mCRpk-True.png,17,9:8
+c,A,All,Square,Purple,Yellow,House,All squares are purple in the house.,0,A,Hse.aSQpr-False.png,15,8:7
+c,I,Every-Some,Star,Triangle,Brown,Cross,Every star is connected to some triangle in the cross.,0,A,F.eSTsTR-Cross.png,8,1
+c,D,D,Circle,Red,null,Cloud,There are red circles in the cloud.,1,L,T.rdCR-Cloud.png,15,1
+c,P,Most,Square,Brown,Red,Heart,Most squares are brown in the heart.,1,L,Hrt.mSQbr-True.png,15,8:7
+c,I,Some-Every,Triangle,Star,Red,Scroll,Some triangle is connected to every star in the scroll.,0,A,F.sTReST-Scroll.png,8,1
+c,P,Most,Star,Pink,Green,Cross,Most stars are pink in the cross.,0,A,Crs.mSTpk-False.png,15,7:8
+c,I,Every-Some,Square,Circle,Yellow,Star,Every square is connected to some circle in the star.,1,L,T.eSQsCR-Star.png,8,1
+c,A,All,Triangle,Red,Orange,Diamond,All triangles are red in the diamond.,0,A,Dmd.aTRrd-False.png,17,9:8
+c,D,D,Square,null,Green,Scroll,There are blue squares in the scroll.,0,A,F.blSQ-Scroll.png,17,1
+c,I,Some-Every,Circle,Square,Purple,Triangle,Some circle is connected to every square in the triangle.,1,L,T.sCReSQ-Triangle.png,8,1
+c,A,All,Circle,Brown,Blue,Cross,All circles are brown in the cross.,0,A,Crs.aCRbr-False.png,17,8:9
+c,I,Some-Every,Star,Triangle,Green,Heart,Some star is connected to every triangle in the heart.,1,L,T.sSTeTR-Heart.png,8,1
+c,P,Most,Triangle,Blue,Pink,Cloud,Most triangles are blue in the cloud.,0,A,Cld.mTRbl-False.png,17,9:8
+c,I,Every-Some,Circle,Square,Orange,Heart,Every circle is connected to some square in the heart.,0,A,F.eCRsSQ-Heart.png,8,1
+c,D,D,Triangle,Brown,null,Star,There are brown triangles in the star.,1,L,T.brTR-Star.png,17,1
+cc,P,Most,Star,Red,Purple,Scroll,Most stars are red in the scroll.,1,A,Scr.mSTrd-True.png,15,8:7
+cc,I,Some-Every,Triangle,Star,Orange,Cross,Some triangle is connected to every star in the cross.,1,A,T.sTReST-Cross.png,8,1
+cc,D,D,Circle,null,Blue,House,There are orange circles in the house.,0,L,F.ogCR-House.png,15,1
+cc,I,Every-Some,Square,Circle,Green,Triangle,Every square is connected to some circle in the triangle.,0,L,F.eSQsCR-Triangle.png,8,1
+cc,A,All,Star,Pink,null,Heart,All stars are pink in the heart.,1,A,Hrt.aSTpk-True.png,15,1
+cc,I,Some-Every,Circle,Square,Blue,Star,Some circle is connected to every square in the star.,0,L,F.sCReSQ-Star.png,8,1
+cc,A,All,Square,Yellow,null,Cloud,All squares are yellow in the cloud.,1,A,Cld.aSQyw-True.png,15,1
+cc,I,Every-Some,Triangle,Star,Blue,Diamond,Every triangle is connected to some star in the diamond.,1,A,T.eTRsST-Diamond.png,8,1
+cc,D,D,Star,Pink,null,Triangle,There are pink stars in the triangle.,1,A,T.pkST-Triangle.png,15,1
+cc,P,Most,Circle,Yellow,Brown,Star,Most circles are yellow in the star.,0,L,Str.mCRyw-False.png,17,8:9
+cc,I,Some-Every,Square,Circle,Pink,Diamond,Some square is connected to every circle in the diamond.,0,L,F.sSQeCR-Diamond.png,8,1
+cc,P,Most,Triangle,Green,Orange,House,Most triangles are green in the house.,1,A,Hse.mTRgr-True.png,17,8:9
+cc,I,Every-Some,Star,Triangle,Pink,Scroll,Every star is connected to some triangle in the scroll.,1,A,T.eSTsTR-Scroll.png,8,1
+cc,D,D,Star,null,Purple,Diamond,There are green stars in the diamond.,0,L,F.grST-Diamond.png,15,1
+cc,A,All,Circle,Orange,null,Scroll,All circles are orange in the scroll.,1,A,Scr.aCRog-True.png,17,1
+cc,P,Most,Square,Orange,Blue,Triangle,Most squares are orange in the triangle.,0,L,Tri.mSQog-False.png,15,7:8
+cc,I,Every-Some,Circle,Square,Red,House,Every circle is connected to some square in the house.,1,A,T.eCRsSQ-House.png,8,1
+cc,A,All,Triangle,Blue,null,Star,All triangles are blue in the star.,1,A,Str.aTRbl-True.png,17,1
+cc,I,Some-Every,Star,Triangle,Yellow,House,Some star is connected to every triangle in the house.,0,L,F.sSTeTR-House.png,8,1
+cc,D,D,Triangle,null,Orange,Heart,There are purple triangles in the heart.,0,L,F.prTR-Heart.png,17,1
+cc,I,Every-Some,Triangle,Star,Purple,Cloud,Every triangle is connected to some star in the cloud.,0,L,F.eTRsST-Cloud.png,8,1
+cc,D,D,Square,Yellow,null,Cross,There are yellow squares in the cross.,1,A,T.ywSQ-Cross.png,17,1
+cc,A,All,Star,Green,Brown,Triangle,All stars are green in the triangle.,0,L,Tri.aSTgr-False.png,15,7:8
+cc,I,Some-Every,Square,Circle,Brown,Cloud,Some square is connected to every circle in the cloud.,1,A,T.sSQeCR-Cloud.png,8,1
+cc,P,Most,Circle,Pink,Yellow,Diamond,Most circles are pink in the diamond.,1,A,Dmd.mCRpk-True.png,17,9:8
+cc,A,All,Square,Purple,Yellow,House,All squares are purple in the house.,0,L,Hse.aSQpr-False.png,15,8:7
+cc,I,Every-Some,Star,Triangle,Brown,Cross,Every star is connected to some triangle in the cross.,0,L,F.eSTsTR-Cross.png,8,1
+cc,D,D,Circle,Red,null,Cloud,There are red circles in the cloud.,1,A,T.rdCR-Cloud.png,15,1
+cc,P,Most,Square,Brown,Red,Heart,Most squares are brown in the heart.,1,A,Hrt.mSQbr-True.png,15,8:7
+cc,I,Some-Every,Triangle,Star,Red,Scroll,Some triangle is connected to every star in the scroll.,0,L,F.sTReST-Scroll.png,8,1
+cc,P,Most,Star,Pink,Green,Cross,Most stars are pink in the cross.,0,L,Crs.mSTpk-False.png,15,7:8
+cc,I,Every-Some,Square,Circle,Yellow,Star,Every square is connected to some circle in the star.,1,A,T.eSQsCR-Star.png,8,1
+cc,A,All,Triangle,Red,Orange,Diamond,All triangles are red in the diamond.,0,L,Dmd.aTRrd-False.png,17,9:8
+cc,D,D,Square,null,Green,Scroll,There are blue squares in the scroll.,0,L,F.blSQ-Scroll.png,17,1
+cc,I,Some-Every,Circle,Square,Purple,Triangle,Some circle is connected to every square in the triangle.,1,A,T.sCReSQ-Triangle.png,8,1
+cc,A,All,Circle,Brown,Blue,Cross,All circles are brown in the cross.,0,L,Crs.aCRbr-False.png,17,8:9
+cc,I,Some-Every,Star,Triangle,Green,Heart,Some star is connected to every triangle in the heart.,1,A,T.sSTeTR-Heart.png,8,1
+cc,P,Most,Triangle,Blue,Pink,Cloud,Most triangles are blue in the cloud.,0,L,Cld.mTRbl-False.png,17,9:8
+cc,I,Every-Some,Circle,Square,Orange,Heart,Every circle is connected to some square in the heart.,0,L,F.eCRsSQ-Heart.png,8,1
+cc,D,D,Triangle,Brown,null,Star,There are brown triangles in the star.,1,A,T.brTR-Star.png,17,1
+d,P,Most,Star,Red,Purple,Scroll,Most stars are red in the scroll.,1,A,Scr.mSTrd-True.png,15,8:7
+d,I,Some-Every,Triangle,Star,Orange,Cross,Some triangle is connected to every star in the cross.,1,A,T.sTReST-Cross.png,8,1
+d,D,D,Circle,null,Blue,House,There are orange circles in the house.,0,L,F.ogCR-House.png,15,1
+d,I,Every-Some,Square,Circle,Green,Triangle,Every square is connected to some circle in the triangle.,0,L,F.eSQsCR-Triangle.png,8,1
+d,A,All,Star,Pink,null,Heart,All stars are pink in the heart.,1,A,Hrt.aSTpk-True.png,15,1
+d,I,Some-Every,Circle,Square,Blue,Star,Some circle is connected to every square in the star.,0,L,F.sCReSQ-Star.png,8,1
+d,A,All,Square,Yellow,null,Cloud,All squares are yellow in the cloud.,1,A,Cld.aSQyw-True.png,15,1
+d,I,Every-Some,Triangle,Star,Blue,Diamond,Every triangle is connected to some star in the diamond.,1,A,T.eTRsST-Diamond.png,8,1
+d,D,D,Star,Pink,null,Triangle,There are pink stars in the triangle.,1,A,T.pkST-Triangle.png,15,1
+d,P,Most,Circle,Yellow,Brown,Star,Most circles are yellow in the star.,0,L,Str.mCRyw-False.png,17,8:9
+d,I,Some-Every,Square,Circle,Pink,Diamond,Some square is connected to every circle in the diamond.,0,L,F.sSQeCR-Diamond.png,8,1
+d,P,Most,Triangle,Green,Orange,House,Most triangles are green in the house.,1,A,Hse.mTRgr-True.png,17,8:9
+d,I,Every-Some,Star,Triangle,Pink,Scroll,Every star is connected to some triangle in the scroll.,1,A,T.eSTsTR-Scroll.png,8,1
+d,D,D,Star,null,Purple,Diamond,There are green stars in the diamond.,0,L,F.grST-Diamond.png,15,1
+d,A,All,Circle,Orange,null,Scroll,All circles are orange in the scroll.,1,A,Scr.aCRog-True.png,17,1
+d,P,Most,Square,Orange,Blue,Triangle,Most squares are orange in the triangle.,0,L,Tri.mSQog-False.png,15,7:8
+d,I,Every-Some,Circle,Square,Red,House,Every circle is connected to some square in the house.,1,A,T.eCRsSQ-House.png,8,1
+d,A,All,Triangle,Blue,null,Star,All triangles are blue in the star.,1,A,Str.aTRbl-True.png,17,1
+d,I,Some-Every,Star,Triangle,Yellow,House,Some star is connected to every triangle in the house.,0,L,F.sSTeTR-House.png,8,1
+d,D,D,Triangle,null,Orange,Heart,There are purple triangles in the heart.,0,L,F.prTR-Heart.png,17,1
+d,I,Every-Some,Triangle,Star,Purple,Cloud,Every triangle is connected to some star in the cloud.,0,L,F.eTRsST-Cloud.png,8,1
+d,D,D,Square,Yellow,null,Cross,There are yellow squares in the cross.,1,A,T.ywSQ-Cross.png,17,1
+d,A,All,Star,Green,Brown,Triangle,All stars are green in the triangle.,0,L,Tri.aSTgr-False.png,15,7:8
+d,I,Some-Every,Square,Circle,Brown,Cloud,Some square is connected to every circle in the cloud.,1,A,T.sSQeCR-Cloud.png,8,1
+d,P,Most,Circle,Pink,Yellow,Diamond,Most circles are pink in the diamond.,1,A,Dmd.mCRpk-True.png,17,9:8
+d,A,All,Square,Purple,Yellow,House,All squares are purple in the house.,0,L,Hse.aSQpr-False.png,15,8:7
+d,I,Every-Some,Star,Triangle,Brown,Cross,Every star is connected to some triangle in the cross.,0,L,F.eSTsTR-Cross.png,8,1
+d,D,D,Circle,Red,null,Cloud,There are red circles in the cloud.,1,A,T.rdCR-Cloud.png,15,1
+d,P,Most,Square,Brown,Red,Heart,Most squares are brown in the heart.,1,A,Hrt.mSQbr-True.png,15,8:7
+d,I,Some-Every,Triangle,Star,Red,Scroll,Some triangle is connected to every star in the scroll.,0,L,F.sTReST-Scroll.png,8,1
+d,P,Most,Star,Pink,Green,Cross,Most stars are pink in the cross.,0,L,Crs.mSTpk-False.png,15,7:8
+d,I,Every-Some,Square,Circle,Yellow,Star,Every square is connected to some circle in the star.,1,A,T.eSQsCR-Star.png,8,1
+d,A,All,Triangle,Red,Orange,Diamond,All triangles are red in the diamond.,0,L,Dmd.aTRrd-False.png,17,9:8
+d,D,D,Square,null,Green,Scroll,There are blue squares in the scroll.,0,L,F.blSQ-Scroll.png,17,1
+d,I,Some-Every,Circle,Square,Purple,Triangle,Some circle is connected to every square in the triangle.,1,A,T.sCReSQ-Triangle.png,8,1
+d,A,All,Circle,Brown,Blue,Cross,All circles are brown in the cross.,0,L,Crs.aCRbr-False.png,17,8:9
+d,I,Some-Every,Star,Triangle,Green,Heart,Some star is connected to every triangle in the heart.,1,A,T.sSTeTR-Heart.png,8,1
+d,P,Most,Triangle,Blue,Pink,Cloud,Most triangles are blue in the cloud.,0,L,Cld.mTRbl-False.png,17,9:8
+d,I,Every-Some,Circle,Square,Orange,Heart,Every circle is connected to some square in the heart.,0,L,F.eCRsSQ-Heart.png,8,1
+d,D,D,Triangle,Brown,null,Star,There are brown triangles in the star.,1,A,T.brTR-Star.png,17,1
+dd,P,Most,Star,Red,Purple,Scroll,Most stars are red in the scroll.,1,L,Scr.mSTrd-True.png,15,8:7
+dd,I,Some-Every,Triangle,Star,Orange,Cross,Some triangle is connected to every star in the cross.,1,L,T.sTReST-Cross.png,8,1
+dd,D,D,Circle,null,Blue,House,There are orange circles in the house.,0,A,F.ogCR-House.png,15,1
+dd,I,Every-Some,Square,Circle,Green,Triangle,Every square is connected to some circle in the triangle.,0,A,F.eSQsCR-Triangle.png,8,1
+dd,A,All,Star,Pink,null,Heart,All stars are pink in the heart.,1,L,Hrt.aSTpk-True.png,15,1
+dd,I,Some-Every,Circle,Square,Blue,Star,Some circle is connected to every square in the star.,0,A,F.sCReSQ-Star.png,8,1
+dd,A,All,Square,Yellow,null,Cloud,All squares are yellow in the cloud.,1,L,Cld.aSQyw-True.png,15,1
+dd,I,Every-Some,Triangle,Star,Blue,Diamond,Every triangle is connected to some star in the diamond.,1,L,T.eTRsST-Diamond.png,8,1
+dd,D,D,Star,Pink,null,Triangle,There are pink stars in the triangle.,1,L,T.pkST-Triangle.png,15,1
+dd,P,Most,Circle,Yellow,Brown,Star,Most circles are yellow in the star.,0,A,Str.mCRyw-False.png,17,8:9
+dd,I,Some-Every,Square,Circle,Pink,Diamond,Some square is connected to every circle in the diamond.,0,A,F.sSQeCR-Diamond.png,8,1
+dd,P,Most,Triangle,Green,Orange,House,Most triangles are green in the house.,1,L,Hse.mTRgr-True.png,17,8:9
+dd,I,Every-Some,Star,Triangle,Pink,Scroll,Every star is connected to some triangle in the scroll.,1,L,T.eSTsTR-Scroll.png,8,1
+dd,D,D,Star,null,Purple,Diamond,There are green stars in the diamond.,0,A,F.grST-Diamond.png,15,1
+dd,A,All,Circle,Orange,null,Scroll,All circles are orange in the scroll.,1,L,Scr.aCRog-True.png,17,1
+dd,P,Most,Square,Orange,Blue,Triangle,Most squares are orange in the triangle.,0,A,Tri.mSQog-False.png,15,7:8
+dd,I,Every-Some,Circle,Square,Red,House,Every circle is connected to some square in the house.,1,L,T.eCRsSQ-House.png,8,1
+dd,A,All,Triangle,Blue,null,Star,All triangles are blue in the star.,1,L,Str.aTRbl-True.png,17,1
+dd,I,Some-Every,Star,Triangle,Yellow,House,Some star is connected to every triangle in the house.,0,A,F.sSTeTR-House.png,8,1
+dd,D,D,Triangle,null,Orange,Heart,There are purple triangles in the heart.,0,A,F.prTR-Heart.png,17,1
+dd,I,Every-Some,Triangle,Star,Purple,Cloud,Every triangle is connected to some star in the cloud.,0,A,F.eTRsST-Cloud.png,8,1
+dd,D,D,Square,Yellow,null,Cross,There are yellow squares in the cross.,1,L,T.ywSQ-Cross.png,17,1
+dd,A,All,Star,Green,Brown,Triangle,All stars are green in the triangle.,0,A,Tri.aSTgr-False.png,15,7:8
+dd,I,Some-Every,Square,Circle,Brown,Cloud,Some square is connected to every circle in the cloud.,1,L,T.sSQeCR-Cloud.png,8,1
+dd,P,Most,Circle,Pink,Yellow,Diamond,Most circles are pink in the diamond.,1,L,Dmd.mCRpk-True.png,17,9:8
+dd,A,All,Square,Purple,Yellow,House,All squares are purple in the house.,0,A,Hse.aSQpr-False.png,15,8:7
+dd,I,Every-Some,Star,Triangle,Brown,Cross,Every star is connected to some triangle in the cross.,0,A,F.eSTsTR-Cross.png,8,1
+dd,D,D,Circle,Red,null,Cloud,There are red circles in the cloud.,1,L,T.rdCR-Cloud.png,15,1
+dd,P,Most,Square,Brown,Red,Heart,Most squares are brown in the heart.,1,L,Hrt.mSQbr-True.png,15,8:7
+dd,I,Some-Every,Triangle,Star,Red,Scroll,Some triangle is connected to every star in the scroll.,0,A,F.sTReST-Scroll.png,8,1
+dd,P,Most,Star,Pink,Green,Cross,Most stars are pink in the cross.,0,A,Crs.mSTpk-False.png,15,7:8
+dd,I,Every-Some,Square,Circle,Yellow,Star,Every square is connected to some circle in the star.,1,L,T.eSQsCR-Star.png,8,1
+dd,A,All,Triangle,Red,Orange,Diamond,All triangles are red in the diamond.,0,A,Dmd.aTRrd-False.png,17,9:8
+dd,D,D,Square,null,Green,Scroll,There are blue squares in the scroll.,0,A,F.blSQ-Scroll.png,17,1
+dd,I,Some-Every,Circle,Square,Purple,Triangle,Some circle is connected to every square in the triangle.,1,L,T.sCReSQ-Triangle.png,8,1
+dd,A,All,Circle,Brown,Blue,Cross,All circles are brown in the cross.,0,A,Crs.aCRbr-False.png,17,8:9
+dd,I,Some-Every,Star,Triangle,Green,Heart,Some star is connected to every triangle in the heart.,1,L,T.sSTeTR-Heart.png,8,1
+dd,P,Most,Triangle,Blue,Pink,Cloud,Most triangles are blue in the cloud.,0,A,Cld.mTRbl-False.png,17,9:8
+dd,I,Every-Some,Circle,Square,Orange,Heart,Every circle is connected to some square in the heart.,0,A,F.eCRsSQ-Heart.png,8,1
+dd,D,D,Triangle,Brown,null,Star,There are brown triangles in the star.,1,L,T.brTR-Star.png,17,1

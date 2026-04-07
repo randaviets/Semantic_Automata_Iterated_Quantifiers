@@ -1,0 +1,17 @@
+group,type,condition,shape1,shape2,color,background,sentence,truth_value,acc_key,image,cardinality,ratio,instructions
+a,practice,Sun,null,Yellow,null,House,There are yellow suns in the house.,1,A,Practice1-True.png,15,1,If the sentence is true press 'A' if the sentence is false press 'L'.
+a,practice,Moon,null,null,null,Heart,There are blue moons in the heart.,0,L,Practice2-False.png,17,1,If the sentence is true press 'A' if the sentence is false press 'L'.
+aa,practice,Sun,null,Yellow,null,House,There are yellow suns in the house.,1,L,Practice1-True.png,15,1,If the sentence is true press 'L' if the sentence is false press 'A'.
+aa,practice,Moon,null,null,null,Heart,There are blue moons in the heart.,0,A,Practice2-False.png,17,1,If the sentence is true press 'L' if the sentence is false press 'A'.
+b,practice,Sun,null,Yellow,null,House,There are yellow suns in the house.,1,L,Practice1-True.png,15,1,If the sentence is true press 'L' if the sentence is false press 'A'.
+b,practice,Moon,null,null,null,Heart,There are blue moons in the heart.,0,A,Practice2-False.png,17,1,If the sentence is true press 'L' if the sentence is false press 'A'.
+bb,practice,Sun,null,Yellow,null,House,There are yellow suns in the house.,1,A,Practice1-True.png,15,1,If the sentence is true press 'A' if the sentence is false press 'L'.
+bb,practice,Moon,null,null,null,Heart,There are blue moons in the heart.,0,L,Practice2-False.png,17,1,If the sentence is true press 'A' if the sentence is false press 'L'.
+c,practice,Sun,null,Yellow,null,House,There are yellow suns in the house.,1,L,Practice1-True.png,15,1,If the sentence is true press 'L' if the sentence is false press 'A'.
+c,practice,Moon,null,null,null,Heart,There are blue moons in the heart.,0,A,Practice2-False.png,17,1,If the sentence is true press 'L' if the sentence is false press 'A'.
+cc,practice,Sun,null,Yellow,null,House,There are yellow suns in the house.,1,A,Practice1-True.png,15,1,If the sentence is true press 'A' if the sentence is false press 'L'.
+cc,practice,Moon,null,null,null,Heart,There are blue moons in the heart.,0,L,Practice2-False.png,17,1,If the sentence is true press 'A' if the sentence is false press 'L'.
+d,practice,Sun,null,Yellow,null,House,There are yellow suns in the house.,1,A,Practice1-True.png,15,1,If the sentence is true press 'A' if the sentence is false press 'L'.
+d,practice,Moon,null,null,null,Heart,There are blue moons in the heart.,0,L,Practice2-False.png,17,1,If the sentence is true press 'A' if the sentence is false press 'L'.
+dd,practice,Sun,null,Yellow,null,House,There are yellow suns in the house.,1,,Practice1-True.png,15,1,If the sentence is true press 'L' if the sentence is false press 'A'.
+dd,practice,Moon,null,null,null,Heart,There are blue moons in the heart.,0,,Practice2-False.png,17,1,If the sentence is true press 'L' if the sentence is false press 'A'.

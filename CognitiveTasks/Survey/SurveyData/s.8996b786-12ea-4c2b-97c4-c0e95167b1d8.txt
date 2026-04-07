@@ -1,0 +1,27 @@
+version: 3.6.5
+uuid: 8996b786-12ea-4c2b-97c4-c0e95167b1d8
+server-time: 2025-12-01-18-57
+client-time: 2025-12-01-10-57
+user_agent: mozilla/5.0 (windows nt 10.0; win64; x64; rv:145.0) gecko/20100101 firefox/145.0
+mobile: 
+screen_width: 1536
+screen_height: 864
+html_width: 1519
+html_height: 1781
+user_time: 2025-12-01-10-57
+T: 5214
+l: prolificID
+stime: 2025-12-01-18-57
+T: 4089
+t: textline
+a: 662e89416a1d494ac9e84af3
+l: ishihara1
+stime: 2025-12-01-18-57
+T: 6117
+t: textline
+a: 12
+l: ishihara2
+stime: 2025-12-01-18-57
+T: 12604
+t: textline
+a: 31

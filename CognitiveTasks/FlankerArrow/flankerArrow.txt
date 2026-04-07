@@ -1,0 +1,75 @@
+options
+ var out FlankerEffect
+
+fonts
+  Small arial 18
+  Large arial 80
+
+## table columns: 1) Stimulus, 2) 1=Congruent, 0=Incongruent, 3) 1: press A, 2: press L
+
+table flankers
+ "←←←←←" 1 1
+ "→→→→→" 1 2
+ "→→←→→" 0 1
+ "←←→←←" 0 2
+
+part warningSignal
+    set $counter 0
+    while $counter < 15
+      set $counter increase
+      show rectangle 0 25 10 50 red
+      show rectangle 0 25 50 10 red
+      delay 100
+      clear -1 -2
+      delay 100
+    while-end
+
+task flankerArrows
+  keys a l
+  font Large
+  show rectangle 0 25 10 50 # stimulus 1
+  show rectangle 0 25 50 10 # stimulus 2
+  show text @1 0 -50 255 255 255 # stimulus 3
+  readkey @3 2000
+  clear 1 2 3
+  if STATUS = CORRECT
+    show text "correct" 0 25 green
+    delay 200
+    clear -1
+  else
+   font Small
+   if STATUS = WRONG
+      show text "You pressed the wrong key." 0 -150 # stimulus 4
+   fi
+   if STATUS = TIMEOUT
+      show text "You responded too slowly. Respond within 2 seconds." 0 -150 # stimulus 3 
+   fi
+   show text "If you see ← in the middle, press the A key" 0 -100 # stimulus 3 
+   show text "If you see → in the middle, press the L key" 0 -50 # stimulus 4
+   part warningSignal
+   clear 4 5 6
+ fi
+ delay 500 # intertrial interval
+ save @1 @2 STATUS RT
+
+block test
+  text "You will see 5 arrows, like this → → → → →"              0 -200
+  text "Only attend the middle one, in this example it is a →"   0 -150
+  text "If you see ← in the middle, press the A key"             0 -100
+  text "If you see → in the middle, press the L key"             0 -50
+  text "You will do this multiple times"                         0 0
+  text "Press space bar to start task"                           0 50
+  wait_for_key
+  task flankerArrows 100
+  feedback
+    text align left
+    text color yellow
+    set &RTCon mean c4 ; select c2 == 1 && c3 == 1 
+    set &RTInc mean c4 ; select c2 == 0 && c3 == 1
+    set &FlankerEffect expression &RTInc - &RTCon
+    text -200 -100 "Average RT in conditions:"
+    text -200  -25 &RTCon ; prefix "Congruent: "     ; postfix " ms"
+    text -200   50 &RTInc ; prefix "Incongruent: "   ; postfix " ms"
+    text -200  125 &FlankerEffect ; prefix "Flanker effect: " ; postfix " ms"
+    text -200  200 "Press space bar to continue"
+  end

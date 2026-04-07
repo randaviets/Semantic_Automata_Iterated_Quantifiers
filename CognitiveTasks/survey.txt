@@ -1,0 +1,79 @@
+# prompt for prolific id
+# run digit span task
+# run flanker arrow task
+# calculate scores for data file
+
+l: prolificID
+t: textline
+q: Please enter your Prolific ID below.
+- {require} Prolific ID:
+
+# COLORBLIND TEST
+l: ishihara1
+i: {center} Ishihara_1.png
+q: What number appears inside the circle?
+t: textline
+
+l: ishihara2
+i: {center} Ishihara_9.png
+q: What number appears inside the circle?
+t: textline
+
+l: ishihara3
+i: {center} Ishihara_11.png
+q: What number appears inside the circle?
+t: textline
+
+l: ishihara4
+i: {center} Ishihara_23.png
+q: What number appears inside the circle?
+t: textline
+
+
+# MORE INFO
+l: infoMessage
+t: info
+q: There are three tasks in this experiment.
+There will be an opportunity to take a break between each task, but you will be asked not to take breaks during the tasks.
+This experiment will take approximately 20 minutes to complete.
+b: Continue Experiment
+
+# DIGIT SPAN TASK
+
+l: digitSpanExperiment
+t: experiment
+- rv_digitSpan
+
+# BREAK 1
+
+l: break1
+t: info
+q: You have completed the first part of this experiment. Feel free to take a short 1-2 minute break, and click the button below when you are ready to continue.
+b: Continue Experiment
+
+# FLANKER TAST
+
+l: flankerArrowsExperiment
+t: experiment
+- rv_flankerArrows
+
+# EXPERIMENT RESULTS (HIDDEN)
+
+l: digitSpan
+t: set
+- $digit_span
+
+l: flankerEffect
+t: set
+- $FlankerEffect
+
+
+# FULL SURVEY END - CONTINUE TO PCIBEX
+
+l: endsurvey
+t: info
+o: end
+q: You have completed the second part of this experiment. Feel free to take a short 1-2 minute break, and click the link below when you are ready to continue.
+<p style="text-align:center"><a href="https://farm.pcibex.net/p/PaAPzA/"><b>Continue Experiment</b></a><p>
+
+

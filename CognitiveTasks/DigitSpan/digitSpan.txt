@@ -1,0 +1,218 @@
+options
+  mouse on
+  bitmapdir stimuli
+  scale
+  var out digit_span
+
+fonts
+  normalfont arial 18
+  bigfont    arial 28
+
+bitmaps
+  digit1 # 1
+  digit2 
+  digit3
+  digit4
+  digit5
+  digit6
+  digit7
+  digit8
+  digit9
+  digit0  # 10
+  ##
+  continue_button
+  continue_button_dark ## for after being clicked
+  clear_button
+  mask
+  # -- instructions ------------
+  i1
+  i2
+  i3
+  i4
+  backButtonImage
+  nextButtonImage
+  startButtonImage
+
+## important variables:
+## &spancounter : the number of trials WITHIN a span (maximally 3)
+## &spancorrect : the number of correct trials WITHIN a span (maximally 2, need 2 to continue)
+## &actualspan : the max number someone remembered
+
+######################################################
+
+task digittask ## starts with 2 and then goes up every correct 2
+  ## Step 1: Create random number sequence
+  set &&allNumbers range 1 10 ## from the bitmaps
+  set &&numberSequence sample &testspan from &&allNumbers
+  ## Step 2: Start screen with basic instruction to get ready
+  font bigfont ## use big font for following two texts
+  show text "Memorize digits"  #1
+  delay 1000
+  clear -1
+  show text "Get ready now!" #2
+  delay 800
+  clear -1
+  font normalfont ## back to smaller font for rest of texts
+  ## Step 3: show all digits at 800 ms per digit
+  set $tmp_counter 1
+  while $tmp_counter <= &testspan
+    show bitmap &&numberSequence[$tmp_counter] #3
+    delay 800 ## how long each to-be-memorized digit will be shown
+    clear -1
+    set $tmp_counter increase
+  while-end
+  # 
+  # Step 4: show the possible clickable digits and other buttons
+  #
+  show bitmap continue_button 250  250 
+  set $range_begin show-counter 
+  show bitmap clear_button -250  250
+  set $clear_counter show-counter
+  #
+  show bitmap digit1  -150 -250
+  show bitmap digit2     0 -250
+  show bitmap digit3   150 -250
+  #		                
+  show bitmap digit4  -150 -160
+  show bitmap digit5     0 -160
+  show bitmap digit6   150 -160
+  #		           
+  show bitmap digit7  -150 -70
+  show bitmap digit8     0 -70
+  show bitmap digit9   150 -70
+  #
+  show bitmap digit0     0  20
+  #
+  show rectangle 0 100 350 5   255 255 0 ## vertical "line", looks nice
+  #
+  set $range_end show-counter
+  #
+  # Step 5: Now let participant click the digit sequence from memory
+  #
+  set &&mask_stimuli clear ## for keeping track of masks overlayed on stimuli in virtual keyboard
+  set &&range_array range $range_begin $range_end ## so that we can later remove already clicked items from it
+  set &&digits_chosen clear
+  set &&already_done clear
+  while $finish_selection == 0 ## loop until continue button clicked
+    readmouse l 1 99999 range &&range_array
+    set &&clickedStimuli append UNDER_MOUSE ## store for later save
+    set &&rts append RT                     ## store for later save
+    if UNDER_MOUSE == $range_begin ## continue button was clicked
+      set $finish_selection 1
+      show bitmap continue_button_dark 250 250 # cover over continue button
+      show bitmap continue_button_dark -250 250 # cover over clear button
+    fi
+    if UNDER_MOUSE == $clear_counter ## clear button clicked
+      set $position_counter decrease 1
+      set $last_digit &&digits_chosen remove last
+      set $tmp &&range_array_removed remove last ## these values were stored
+      set &&range_array append $tmp ## increase range array
+      ## now remove last mask drawn and last digit underneath
+      set $last_mask &&mask_stimuli remove last
+      set $last_digit &&digitsUnderStimNums remove last
+      clear $last_mask
+      clear $last_digit
+    fi
+    if UNDER_MOUSE > $clear_counter ## a digit button was clicked
+      set $position_counter increase
+      set &&range_array remove value UNDER_MOUSE ## remove so it cannot be clicked again
+      set &&range_array_removed append UNDER_MOUSE ## the removed values need to be saved in case you want to undo this action ("clear")
+      set $clicked_stimulus_x getx UNDER_MOUSE
+      set $clicked_stimulus_y gety UNDER_MOUSE
+      show bitmap mask $clicked_stimulus_x $clicked_stimulus_y  ## mask the digit
+      set $tmp_mask show-counter
+      set &&mask_stimuli append $tmp_mask ## keep track of the mask stimuli in case removal needed
+      ## now show red circle on the digit button that was clicked
+      show circle $clicked_stimulus_x $clicked_stimulus_y 20   255 100 100
+      delay 100
+      clear -1
+      ## 
+      set $myIndex expression UNDER_MOUSE - $clear_counter ## this makes the digits go from 13 to 22
+      ## was this digit clicked before
+      set $already_done &&digits_chosen locate $myIndex ## check if digit was already clicked before
+      if $already_done == 0 ## if not already clicked (each digit is only used once in sequences)
+        set &&digits_chosen append $myIndex
+        set $xPosDigits expression $position_counter * 60 - 300
+        show bitmap $myIndex $xPosDigits 150
+        set &&digitsUnderStimNums append SHOW_COUNTER
+      fi
+    fi
+  while-end
+  #
+  # Step 6: Save detailed trial data
+  #
+  save BLOCKNUMBER "clickedStim" &&clickedStimuli
+  save BLOCKNUMBER "rts" &&rts
+  #
+  # Step 7: digit entry done, check if sequence was entered correctly
+  #
+  if &&digits_chosen == &&numberSequence
+    set $error_status 0
+    save BLOCKNUMBER &best_so_far &testspan $error_status "//" &&numberSequence "//" &&digits_chosen
+    set &spancorrect increase
+    show text "CORRECT" 0 70
+    if &spancounter < 3
+      set &spancounter increase     
+    fi
+    if &spancorrect == 2
+      set &spancounter 0
+      set &spanerror 0
+      set &spancorrect 0
+      set &best_so_far &testspan
+      set &testspan increase
+    fi
+  fi
+  if &&digits_chosen != &&numberSequence
+    set $error_status 1
+    save BLOCKNUMBER &best_so_far &testspan $error_status "//" &&numberSequence "//" &&digits_chosen
+    set &spanerror increase
+    if &spancounter < 3
+      set &spancounter increase     
+    fi
+    show text "WRONG" 0 70
+  fi
+  delay 2000
+  set &&clickedStimuli clear
+  set &&rts clear
+  #
+  # end task when 2 errors in row
+  #
+  if &spanerror == 2
+    set &digitspan &testspan
+    set &digit_span &best_so_far
+    end tasklist
+  fi
+  # end task when digitspan is going to 10
+  # this is unlikely to happen, though
+  if &testspan == 10
+    set &digit_span 9
+    end tasklist
+  fi
+
+######################################################################
+## blocks
+######################################################################
+
+block training
+  pager option mouse backButtonImage -250 220 nextButtonImage -30 220 startButtonImage 250 220
+  pager i1 i2 i3
+  set &testspan 2
+  tasklist
+    digittask 1
+  end
+
+block digit_block
+  message i4 mouse
+  set &testspan 2
+  set &spancorrect 0
+  set &spanerror 0
+  set &spancounter 0
+  tasklist
+    digittask 99
+  end
+  feedback
+    text 0 -200 "Your memory score is the sequence you could remember 2x in a row."
+    text 0 -100 &best_so_far ; prefix "Your best sequence (digit span): "
+    text 0  100 "Click the mouse anywhere to continue"
+    wait_for_key mouse
+  end

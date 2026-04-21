@@ -47,8 +47,6 @@ These tasks are designed to evaluate how participants verify whether a sentence 
   Teaching of Psychology, 44(1), 24–31.  
   https://doi.org/10.1177/0098628316677643
 
-
-
-
+---
 
 ![Poster Graphic](/HSP2026/HSP2026_Poster.png)
